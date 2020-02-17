@@ -1,0 +1,24 @@
+body {
+	background-color:#EEEEEE;
+	margin:0;
+}
+#primeira {
+	background-color:#FFFFFF;
+	height:80px;
+	border-bottom:1px solid #CCCCCC;
+}
+#primeira #logo {
+	margin-top:23px;
+}
+#primeira #topo {
+	width:800px;
+	height:80px;
+	margin:auto;
+}
+.post {
+	background-color:#FFFFFF;
+	width:500px;
+	margin:auto;
+	margin-top:30px;
+	border:1px solid #CCCCCC;
+}
