@@ -11,14 +11,12 @@
 		</div>
 
 		<div class="area">
+		    <?php
+                
+                $pdo = new PDO("mysql:dbname=instagram;host=localhost", "root", "");
+            ?>
 			<div class="post">
-				<img src="foto1.jpg" width="100%" />
-			</div>
-			<div class="post">
-				<img src="foto2.jpg" width="100%" />
-			</div>
-			<div class="post">
-				<img src="foto3.jpg" width="100%" />
+				<img src="fotos/foto1.jpg" width="100%" />
 			</div>
 		</div>
 	</body>
