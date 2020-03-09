@@ -22,3 +22,48 @@ body {
 	margin-top:30px;
 	border:1px solid #CCCCCC;
 }
+
+#ligthbox_fundo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+
+#ligthbox_foto{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

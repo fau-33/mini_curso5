@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Página de Exemplo</title>
+		<title>Instagram</title>
 		<link rel="stylesheet" type="text/css" href="estilo.css"/>
 	</head>
 	<body>
@@ -11,13 +11,36 @@
 		</div>
 
 		<div class="area">
-		    <?php
-                
-                $pdo = new PDO("mysql:dbname=instagram;host=localhost", "root", "");
-            ?>
+		    
 			<div class="post">
-				<img src="fotos/foto1.jpg" width="100%" />
+				<img onclick="abrirLigthbox(this)" src="fotos/foto1.jpg" width="100%" />
 			</div>
+			
 		</div>
+		
+		<div id="ligthbox_fundo" onclick="fecharLigthbox()"></div>
+		<div id="ligthbox_foto" onclick="fecharLigthbox()"></div>
+		
+		<script type="text/javascript">
+            function abrirLigthbox(obj){
+                document.body.scrollTop = 0;
+                
+                document.getElementById(ligthbox_fundo).style.backgroundColor = "#000000";
+                
+                document.getElementById(ligthbox_fundo).style.display = "block";
+                document.getElementById(ligthbox_foto).style.display = "block";
+                
+                document.getElementById(ligthbox_foto).innerHTML = "<img src='"+obj.getAttribute("src")+"' width='100%'/>";
+            }
+            function fecharLigthbox(){
+                document.getElementById(ligthbox_fundo).style.display = "none";
+                document.getElementById(ligthbox_foto).style.display = "none";
+            }
+            
+            
+            
+        </script>
+		
+		
 	</body>
 </html>
